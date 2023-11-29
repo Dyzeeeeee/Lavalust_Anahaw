@@ -8,7 +8,7 @@
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                 <div class="blog-item">
                     <div class="overflow-hidden rounded">
-                        <img src="<?= base_url()?>/public/img/blog-1.jpg" class="img-fluid w-100" alt="">
+                        <img src="<?= base_url()?>/public/website/img/blog-1.jpg" class="img-fluid w-100" alt="">
                     </div>
                     <div class="blog-content mx-4 d-flex rounded bg-light">
                         <div class="text-dark bg-primary rounded-start">
@@ -24,7 +24,7 @@
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
                 <div class="blog-item">
                     <div class="overflow-hidden rounded">
-                        <img src="<?= base_url()?>/public/img/blog-2.jpg" class="img-fluid w-100" alt="">
+                        <img src="<?= base_url()?>/public/website/img/blog-2.jpg" class="img-fluid w-100" alt="">
                     </div>
                     <div class="blog-content mx-4 d-flex rounded bg-light">
                         <div class="text-dark bg-primary rounded-start">
@@ -40,7 +40,7 @@
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
                 <div class="blog-item">
                     <div class="overflow-hidden rounded">
-                        <img src="<?= base_url()?>/public/img/blog-3.jpg" class="img-fluid w-100" alt="">
+                        <img src="<?= base_url()?>/public/website/img/blog-3.jpg" class="img-fluid w-100" alt="">
                     </div>
                     <div class="blog-content mx-4 d-flex rounded bg-light">
                         <div class="text-dark bg-primary rounded-start">

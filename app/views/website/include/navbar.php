@@ -3,7 +3,7 @@
         <nav class="navbar navbar-light navbar-expand-lg py-4">
             <a href="" class="navbar-brand">
                 <!-- <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1> -->
-                <img src="<?= base_url() ?>/public/img/logo.png" alt="" class="logo" style="width: 200px;">
+                <img src="<?= base_url() ?>/public/website/img/logo.png" alt="" class="logo" style="width: 200px;">
             </a>
             <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">

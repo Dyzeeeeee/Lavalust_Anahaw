@@ -50,3 +50,7 @@ $router->get('/register', 'Register_controller::index');
 $router->post('/register', 'Register_controller::register');
 $router->get('/login', 'Login_controller::index');
 $router->post('/login', 'Login_controller::login');
+
+$router->get('/admin', 'Admin_controller::dashboard');
+$router->get('/menu', 'Admin_controller::menu');
+

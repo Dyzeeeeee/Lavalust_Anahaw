@@ -14,7 +14,7 @@
                     More</a>
             </div>
             <div class="col-lg-5 col-md-12">
-                <img src="<?= base_url() ?>/public/img/hero.png" class="img-fluid rounded animated zoomIn" alt="">
+                <img src="<?= base_url() ?>/public/website/img/hero.png" class="img-fluid rounded animated zoomIn" alt="">
             </div>
         </div>
     </div>
