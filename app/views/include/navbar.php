@@ -5,7 +5,8 @@
                 <!-- <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1> -->
                 <img src="<?= base_url() ?>/public/img/logo.png" alt="" class="logo" style="width: 200px;">
             </a>
-            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars text-primary"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -27,8 +28,9 @@
                     </div>
                     <a href="contact" class="nav-item nav-link">Contact</a>
                 </div>
-                <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
+                    data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                <a href="login" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Login</a>
             </div>
         </nav>
     </div>

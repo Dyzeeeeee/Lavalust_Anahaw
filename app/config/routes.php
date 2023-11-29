@@ -46,3 +46,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
 // $router->get('/', 'Welcome::index');
 $router->get('/', 'Menu_controller::index');
+$router->get('/register', 'Register_controller::index');
+$router->post('/register', 'Register_controller::register');
+$router->get('/login', 'Login_controller::index');
+$router->post('/login', 'Login_controller::login');

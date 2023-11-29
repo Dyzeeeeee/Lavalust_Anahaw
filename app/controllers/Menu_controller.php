@@ -14,7 +14,6 @@ class Menu_controller extends Controller
         $data = [
             'menu' => $this->Menu_model->getMenu()
         ];
-        // the employees variable will be used in the foreach
         $this->call->view('index', $data);
     }
 }

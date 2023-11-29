@@ -80,7 +80,7 @@ $config['ENVIRONMENT']             = 'development';
 | WARNING: You MUST set this value!
 |
 */
-$config['base_url'] 				= 'http://localhost/lavalust/LavaLust4Project';
+$config['base_url'] 				= 'http://localhost/lavalust_anahaw';
 
 /*
 |--------------------------------------------------------------------------
