@@ -1,79 +1,79 @@
 <?php include 'include/head.php' ?>
-<?php include 'include/navbar.php' ?>
 
-<div id="layoutSidenav">
-    <?php include 'include/sidenav.php' ?>
-    <div id="layoutSidenav_content">
-        <main>
-            <div class="container-fluid px-4">
-                <h1 class="mt-4">Tables</h1>
-                <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Tables</li>
-                </ol>
-                <div class="card mb-4">
-                    <div class="card-body">
-                        DataTables is a third party plugin that is used to generate the demo table below. For more
-                        information about DataTables, please visit the
-                        <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
-                        .
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <?php include 'include/navbar.php' ?>
+        <?php include 'include/sidebar.php' ?>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Menu</h1>
+                        </div>
                     </div>
-                </div>
+                </div><!-- /.container-fluid -->
+            </section>
 
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <i class="fas fa-table me-1"></i>
-                        DataTable Example
-                    </div>
-                    <div class="card-body">
-                        <table id="datatablesSimple">
-                            <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th>SubCategory</th>
-                                    <th>Item</th>
-                                    <th>Description</th>
-                                    <th>Image</th>
-                                    <th>Price</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
 
-                            <tbody>
-                                <?php foreach ($menu as $item): ?>
+            <div class="row px-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Responsive Hover Table</h3>
 
+                            <div class="card-tools">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-default">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
                                     <tr>
-                                        <td>
-                                            <?= $item['category'] ?>
-                                        </td>
-                                        <td>
-                                            <?= $item['subcategory'] ?>
-                                        </td>
-                                        <td>
-                                            <?= $item['item'] ?>
-                                        </td>
-                                        <td>
-                                            <?= $item['description'] ?>
-                                        </td>
-                                        <td>
-                                            <?= $item['image'] ?>
-                                        </td>
-                                        <td>
-                                            <?= $item['price'] ?>
-                                        </td>
-                                        <td><a href="">delete</a> || <a href="">edit</a></td>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Image</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Category</th>
+                                        <th>Action</th>
                                     </tr>
-                                <?php endforeach ?>
-
-                            </tbody>
-
-                        </table>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($menuItems as $mi) : ?>
+                                        <tr>
+                                            <td><?= $mi['name'] ?></td>
+                                            <td><?= $mi['description'] ?></td>
+                                            <td><?= $mi['image'] ?></td>
+                                            <td><?= $mi['price'] ?></td>
+                                            <td><?= $mi['quantity'] ?></td>
+                                            <td><?= $mi['category_name'] ?></td>
+                                            <td>
+                                                <!-- Add your delete and edit links/buttons here -->
+                                                <a href="#">Delete</a> || <a href="#">Edit</a>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
                     </div>
+                    <!-- /.card -->
                 </div>
-
             </div>
-        </main>
+        </div>
     </div>
-</div>
-
+</body>
 <?php include 'include/some-script.php' ?>

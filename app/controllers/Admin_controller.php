@@ -19,11 +19,16 @@ class Admin_controller extends Controller
 
     public function menu()
     {
+        // Get all menu items with category names using a SQL join
+        $menuItems = $this->Menu_model->getMenuWithCategories();
+    
         $data = [
-            'menu' => $this->Menu_model->getMenu()
+            'menuItems' => $menuItems,
         ];
-
+    
         $this->call->view('admin/menu', $data);
     }
+
+  
+    
 }
-?>

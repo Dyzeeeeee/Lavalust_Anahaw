@@ -9,11 +9,11 @@ class Menu_controller extends Controller
         $this->call->model('Menu_model');
     }
 
-    public function index()
-    {
-        $data = [
-            'menu' => $this->Menu_model->getMenu()
-        ];
-        $this->call->view('website/index', $data);
-    }
+    // public function index()
+    // {
+    //     $data = [
+    //         'menu' => $this->Menu_model->getMenu()
+    //     ];
+    //     $this->call->view('website/index', $data);
+    // }
 }
