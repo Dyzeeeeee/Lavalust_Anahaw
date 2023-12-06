@@ -38,7 +38,7 @@
                     <div class="row g-4">
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-01.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-01.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Paneer</h4>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.2s">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-02.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-02.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Sweet Potato</h4>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.3s">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-03.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-03.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Sabudana Tikki</h4>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.4s">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-04.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-04.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Pizza</h4>
@@ -90,7 +90,7 @@
                         </div>
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.5s">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-05.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-05.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Bacon</h4>
@@ -103,7 +103,7 @@
                         </div>
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.6s">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-06.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-06.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Chicken</h4>
@@ -116,7 +116,7 @@
                         </div>
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.7s">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-07.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-07.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Blooming</h4>
@@ -129,7 +129,7 @@
                         </div>
                         <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.8s">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-08.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-08.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Sweet</h4>
@@ -146,7 +146,7 @@
                     <div class="row g-4">
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-01.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-01.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Argentinian</h4>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-03.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-03.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Crispy</h4>
@@ -172,7 +172,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-05.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-05.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Sabudana Tikki</h4>
@@ -185,7 +185,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-07.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-07.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Blooming</h4>
@@ -198,7 +198,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-08.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-08.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Argentinian</h4>
@@ -211,7 +211,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-03.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-03.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Lemon</h4>
@@ -224,7 +224,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-02.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-02.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Water Drink</h4>
@@ -237,7 +237,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-01.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-01.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Salty lemon</h4>
@@ -255,7 +255,7 @@
                         <?php foreach($menu as $item):?>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-01.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-01.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4><?= $item['item']?></h4>
@@ -273,7 +273,7 @@
                     <div class="row g-4">
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-06.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-06.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Sabudana Tikki</h4>
@@ -286,7 +286,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-07.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-07.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Crispy</h4>
@@ -299,7 +299,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-09.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-09.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Pizza</h4>
@@ -312,7 +312,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-02.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-02.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Bacon</h4>
@@ -325,7 +325,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-03.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-03.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Chicken</h4>
@@ -338,7 +338,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-05.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-05.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Blooming</h4>
@@ -351,7 +351,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-07.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-07.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Sweet</h4>
@@ -364,7 +364,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-09.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-09.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Argentinian</h4>
@@ -381,7 +381,7 @@
                     <div class="row g-4">
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-06.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-06.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Sabudana Tikki</h4>
@@ -394,7 +394,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-07.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-07.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Crispy</h4>
@@ -407,7 +407,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-09.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-09.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Pizza</h4>
@@ -420,7 +420,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-02.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-02.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Bacon</h4>
@@ -433,7 +433,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-03.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-03.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Chicken</h4>
@@ -446,7 +446,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-05.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-05.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Blooming</h4>
@@ -459,7 +459,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-07.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-07.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Sweet</h4>
@@ -472,7 +472,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="menu-item d-flex align-items-center">
-                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/img/menu-09.jpg" alt="">
+                                <img class="flex-shrink-0 img-fluid rounded-circle" src="<?= base_url() ?>/public/website/img/menu-09.jpg" alt="">
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                         <h4>Argentinian</h4>

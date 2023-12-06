@@ -1,5 +1,5 @@
-<?php include 'include/head.php' ?>
-<?php include 'include/some_script.php' ?>
+<?php include 'website/include/head.php' ?>
+<?php include 'website/include/some_script.php' ?>
 
 <div class="container-fluid service py-6">
     <div class="container">
@@ -7,9 +7,9 @@
             <!-- <small
                 class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our
                 Services</small> -->
-            <a href="/" class="navbar-brand">
+            <a href="<?= base_url() ?>/" class="navbar-brand">
                 <!-- <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1> -->
-                <img src="<?= base_url() ?>/public/img/logo.png" alt="" class="logo pb-4 mb-4" style="width: 200px;">
+                <img src="<?= base_url() ?>/public/website/img/logo.png" alt="" class="logo pb-4 mb-4" style="width: 200px;">
             </a>
         </div>
         <div class="row g-4 justify-content-center">

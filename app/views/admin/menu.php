@@ -53,7 +53,7 @@
                                             <?= $item['item'] ?>
                                         </td>
                                         <td>
-                                            <?= $item['descriptiom'] ?>
+                                            <?= $item['description'] ?>
                                         </td>
                                         <td>
                                             <?= $item['image'] ?>
