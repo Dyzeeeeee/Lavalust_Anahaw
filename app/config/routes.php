@@ -1,5 +1,5 @@
 <?php
-defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
+defined('PREVENT_DIRECT_ACCESS') or exit('No direct script access allowed');
 /**
  * ------------------------------------------------------------------
  * LavaLust - an opensource lightweight PHP MVC Framework
@@ -45,15 +45,33 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 */
 
 // $router->get('/', 'Welcome::index');
-$router->get('/', 'Menu_controller::index');
+$router->get('/website/home', 'Website_controller::index');
+$router->get('/website/about', 'Website_controller::about');
+
+
+
 $router->get('/register', 'Register_controller::index');
 $router->post('/register', 'Register_controller::register');
+
 $router->get('/login', 'Login_controller::index');
 $router->post('/login', 'Login_controller::login');
+$router->post('/logout', 'Login_controller::logout');
 
-$router->get('/admin/dashboard', 'Admin_controller::dashboard');
 $router->get('/admin', 'Admin_controller::dashboard');
+$router->get('/admin/dashboard', 'Admin_controller::dashboard');
 $router->get('/admin/menu', 'Admin_controller::menu');
+
+
+$router->post('/admin/menu/edit/(:num)', 'Menu_controller::edit');
+$router->post('/admin/menu/add', 'Menu_controller::add');
+
+$router->get('/chats/(:num)', 'Chat_controller::chats');
+$router->post('/sendmessage', 'Chat_controller::sendmessage');  
+
+
+
+
+
+
 $router->get('/email-sender', 'Welcome::email');
 $router->post('/send_mail', 'Welcome::send_mail');
-

@@ -35,4 +35,3 @@ class Register_controller extends Controller
         redirect('/');
     }
 }
-?>

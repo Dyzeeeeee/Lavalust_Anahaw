@@ -9,6 +9,7 @@ class Login_controller extends Controller
         parent::__construct();
         $this->call->model('Accounts_model');
     }
+
     public function index()
     {
         $this->call->view('login');
@@ -32,13 +33,40 @@ class Login_controller extends Controller
 
                 if (!empty($user) && password_verify($password, $user['password'])) {
                     // Password is correct, perform login
-                    // You might want to set user sessions or perform any other authentication logic
-                    redirect('/'); // Redirect to the dashboard or any other authenticated page
+
+                    // Store user data in session
+                    $userData = array(
+                        'firstName'  => $user['firstName'],
+                        'id'  => $user['id'],
+                        'email'     => $user['email'],
+                        'lastName'     => $user['lastName'],
+                        'role'     => $user['role'],
+                        'logged_in' => TRUE
+                    );
+
+                    // Output session data for debugging
+                    $this->session->set_userdata($userData);
+
+                    if ($userData['role'] == 'user') {
+                        redirect('/');
+                    } else if ($userData['role'] == 'admin') {
+                        redirect('/admin');
+                    }
+
+                    // redirect('/');
                 } else {
                     echo "Invalid email or password";
                 }
             }
         }
     }
+
+    public function logout()
+    {
+        // Destroy the user session
+        $this->session->sess_destroy();
+
+        // Redirect to the login page or any other page you prefer
+        redirect('/login');
+    }
 }
-?>

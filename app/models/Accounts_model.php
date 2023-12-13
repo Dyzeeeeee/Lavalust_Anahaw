@@ -28,5 +28,18 @@ class Accounts_model extends Model
         return $result;
     }
 
+    public function getUsers()
+    {
+        return $this->db->table('accounts')->get_all();
+    }
+
+    public function getUserById($userId)
+    {
+        $result = $this->db->table('accounts')
+            ->select('*')
+            ->where('id', $userId)
+            ->get();
+
+        return $result;
+    }
 }
-?>

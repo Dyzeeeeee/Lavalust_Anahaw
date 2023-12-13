@@ -22,20 +22,11 @@ class Welcome extends Controller
 	public function send_mail()
 	{
 		$this->call->library('email');
-		$this->call->library('upload', $_FILES["attachment"]);
-		$this->upload
-			->max_size(5)
-			->min_size(1)
-			->set_dir('public')
-			->allowed_extensions(array('jpg'))
-			->allowed_mimes(array('image/jpeg'))
-			->is_image()
-			->encrypt_name();
 		// Get form data
 		$recipientEmail = $this->io->post('recipientEmail');
 		$subject = $this->io->post('subject');
 		$message = $this->io->post('message');
-		$attachment = $this->io->post('attachment');
+		// $attachment = $this->io->post('attachment');
 
 		// Set default sender
 		$sender = 'chiwiz1022@gmail.com';
@@ -45,7 +36,7 @@ class Welcome extends Controller
 		$this->email->recipient($recipientEmail);
 		$this->email->subject($subject);
 		$this->email->email_content($message, 'html');
-		$this->email->attachment($attachment);
+		// $this->email->attachment($attachment);
 
 		$bind = array(
 			'recipient' => $recipientEmail,

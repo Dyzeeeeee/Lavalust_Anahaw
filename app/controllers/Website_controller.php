@@ -1,17 +1,15 @@
 <?php
 defined('PREVENT_DIRECT_ACCESS') or exit('No direct script access allowed');
 
-class Admin_controller extends Controller
+class Website_controller extends Controller
 {
-
-
     public function __construct()
     {
         parent::__construct();
         $this->call->model('Menu_model');
     }
 
-    public function dashboard()
+    public function index()
     {
         $userData = $this->session->userdata();
 
@@ -19,21 +17,16 @@ class Admin_controller extends Controller
             'menu' => $this->Menu_model->getMenu(),
             'user' => $userData
         ];
-        $this->call->view('admin/dashboard', $data);
+        $this->call->view('website/index', $data);
     }
 
-
-
-    public function menu()
+    public function about()
     {
-        // Get all menu items with category names using a SQL join
         $userData = $this->session->userdata();
 
         $data = [
-            'menu' => $this->Menu_model->getMenu(),
             'user' => $userData
         ];
-
-        $this->call->view('admin/menu', $data);
+        $this->call->view('website/about', $data);
     }
 }

@@ -191,10 +191,10 @@
                                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                             </div>
 
-                            <div class="mb-3">
+                            <!-- <div class="mb-3">
                                 <label for="attachment" class="form-label">Attachment</label>
                                 <input type="file" class="form-control" id="attachment" name="attachment">
-                            </div>
+                            </div> -->
 
                             <button type="submit" class="btn btn-primary">Send Email</button>
                         </form>
