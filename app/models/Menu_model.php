@@ -25,4 +25,5 @@ class Menu_model extends Model
         // Insert into the 'menu' table
         $this->db->table('menu')->insert($data);
     }
+
 }

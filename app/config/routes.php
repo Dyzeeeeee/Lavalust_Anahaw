@@ -48,7 +48,19 @@ defined('PREVENT_DIRECT_ACCESS') or exit('No direct script access allowed');
 $router->get('/website/home', 'Website_controller::index');
 $router->get('/website/about', 'Website_controller::about');
 
+$router->get('/website/service', 'Website_controller::service');
 
+$router->get('/website/event', 'Website_controller::event');
+
+$router->get('/website/menu', 'Website_controller::menu');
+
+$router->get('/website/book', 'Website_controller::book');
+
+$router->get('/website/blog', 'Website_controller::blog');
+
+$router->get('/website/team', 'Website_controller::team');
+
+$router->get('/website/testimonial', 'Website_controller::testimonial');
 
 $router->get('/register', 'Register_controller::index');
 $router->post('/register', 'Register_controller::register');
