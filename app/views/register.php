@@ -1,37 +1,37 @@
 <?php include 'website/include/head.php' ?>
 <?php include 'website/include/some_script.php' ?>
 
-<div class="container-fluid service py-6">
-    <div class="container">
-        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-            <!-- <small
-                class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our
-                Services</small> -->
-            <a href="<?= base_url() ?>/" class="navbar-brand">
-                <!-- <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1> -->
-                <img src="<?= site_url() ?>/public/website/img/logo.png" alt="" class="logo pb-4 mb-4" style="width: 200px;">
+<div class="container-fluid service d-flex align-items-center justify-content-center py-6 px-4" style="background-color: rgba(0, 0, 0, 0); height: 100vh;">
+    <div class="row justify-content-center w-100">
+        <div class="col-lg-4 col-md-4 col-sm-5 col-7 d-flex align-items-center justify-content-end">
+            <a href="<?= base_url() ?>/" class="navbar-brand me-3">
+                <img src="<?= site_url() ?>/public/website/img/logo.png" alt="" class="logo" style="width: 250px;">
             </a>
         </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                <div class="bg-light rounded ">
-                    <div class="service-content d-flex align-items-center justify-content-center p-4">
-                        <div class="service-content-icon text-center">
-                            <h4 class="mb-3">Create an account</h4>
-                            <form action="<?= site_url('/register') ?>" method="post" class="row">
-                                <input class="mb-3" type="text" name="firstname" placeholder="Firstname" id="firstname">
-                                <input class="mb-3" type="text" name="lastname" placeholder="Lastname" id="lastname">
-                                <input class="mb-3" type="text" name="email" placeholder="Email" id="email">
-                                <input class="mb-3" type="password" name="password" placeholder="Password"
-                                    id="password">
-                                <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill">Register</button>
-                            </form>
-
-                            <a href="<?= base_url() ?>/login">
-                                <p class="mb-4 mt-4">Already have an account?</p>
-                            </a>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-3"></div>
+        <div class="col-lg-6 col-md-6 col-sm-7 col-12">
+            <div class="card bg-light rounded" style="outline: 1px solid #d4a762; padding: 20px; width: 75%;">
+                <div class="card-body text-center">
+                    <h4 class="card-title mb-3">Create an account</h4>
+                    <form action="<?= site_url('/register') ?>" method="post" class="row">
+                        <div class="mb-3">
+                            <input class="mb-3 form-control" type="text" name="firstname" placeholder="Firstname" id="firstname">
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <input class="mb-3 form-control" type="text" name="lastname" placeholder="Lastname" id="lastname">
+                        </div>
+                        <div class="mb-3">
+                            <input class="mb-3 form-control" type="text" name="email" placeholder="Email" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <input class="mb-3 form-control" type="password" name="password" placeholder="Password" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill" style="background-color: #d4a762;">Register</button>
+                    </form>
+
+                    <a href="<?= base_url() ?>/login">
+                        <p class="mb-4 mt-4" style="color: #d4a762;">Already have an account?</p>
+                    </a>
                 </div>
             </div>
         </div>
