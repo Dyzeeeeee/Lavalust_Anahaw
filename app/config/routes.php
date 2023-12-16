@@ -46,6 +46,8 @@ defined('PREVENT_DIRECT_ACCESS') or exit('No direct script access allowed');
 
 // $router->get('/', 'Welcome::index');
 $router->get('/website/home', 'Website_controller::index');
+$router->get('/website', 'Website_controller::index');
+$router->get('', 'Website_controller::index');
 $router->get('/website/about', 'Website_controller::about');
 
 $router->get('/website/service', 'Website_controller::service');

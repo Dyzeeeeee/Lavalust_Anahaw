@@ -30,13 +30,13 @@
 
                 </div>
                 <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                <?php if ($user['logged_in']) : ?>
-                    <form action="<?= site_url('/logout') ?>" method="post">
-                        <button type="submit" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Logout</button>
-                    </form>
-                <?php else : ?>
-                    <a href="<?= site_url('/login') ?>" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Login</a>
-                <?php endif; ?>
+                <?php if (isset($_SESSION['logged_in'])) {
+                ?>
+                    <a href="logout" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Logout</a>
+                <?php } else { ?>
+                    <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
+                    <a href="<?= base_url() ?>/login" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Login</a>
+                <?php } ?>
 
 
             </div>
