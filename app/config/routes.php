@@ -49,19 +49,12 @@ $router->get('/website/home', 'Website_controller::index');
 $router->get('/website', 'Website_controller::index');
 $router->get('', 'Website_controller::index');
 $router->get('/website/about', 'Website_controller::about');
-
 $router->get('/website/service', 'Website_controller::service');
-
 $router->get('/website/event', 'Website_controller::event');
-
 $router->get('/website/menu', 'Website_controller::menu');
-
 $router->get('/website/book', 'Website_controller::book');
-
 $router->get('/website/blog', 'Website_controller::blog');
-
 $router->get('/website/team', 'Website_controller::team');
-
 $router->get('/website/testimonial', 'Website_controller::testimonial');
 
 $router->get('/register', 'Register_controller::index');
@@ -81,10 +74,6 @@ $router->post('/admin/menu/add', 'Menu_controller::add');
 
 $router->get('/chats/(:num)', 'Chat_controller::chats');
 $router->post('/sendmessage', 'Chat_controller::sendmessage');  
-
-
-
-
 
 
 $router->get('/email-sender', 'Welcome::email');
