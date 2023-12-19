@@ -9,6 +9,7 @@ class Admin_controller extends Controller
     {
         parent::__construct();
         $this->call->model('Menu_model');
+        $this->call->model('FoodStock_model');
     }
 
     public function dashboard()
@@ -28,12 +29,54 @@ class Admin_controller extends Controller
     {
         // Get all menu items with category names using a SQL join
         $userData = $this->session->userdata();
+        $uniqueCategories = $this->Menu_model->getUniqueCategories();
+
 
         $data = [
             'menu' => $this->Menu_model->getMenu(),
-            'user' => $userData
+            'user' => $userData,
+            'uniqueCategories' => $uniqueCategories,
         ];
 
         $this->call->view('admin/menu', $data);
+    }
+
+    public function food_stocks()
+    {
+        // Get all menu items with category names using a SQL join
+        $userData = $this->session->userdata();
+
+        $data = [
+            'foodStocks' => $this->FoodStock_model->getFoodStocks(),
+            'user' => $userData
+        ];
+
+        $this->call->view('admin/inventory/food_stocks', $data);
+    }
+
+    public function session()
+    {
+        // Get all menu items with category names using a SQL join
+        $userData = $this->session->userdata();
+
+        $data = [
+            'user' => $userData,
+            'menu' => $this->Menu_model->getMenu(),
+        ];
+
+        $this->call->view('admin/POS/session', $data);
+    }
+
+    public function payment()
+    {
+        // Get all menu items with category names using a SQL join
+        $userData = $this->session->userdata();
+
+        $data = [
+            'user' => $userData,
+            'menu' => $this->Menu_model->getMenu(),
+        ];
+
+        $this->call->view('admin/POS/payment', $data);
     }
 }

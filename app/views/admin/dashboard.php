@@ -14,11 +14,8 @@
                             <h1>Dashboard</h1>
                         </div>
                     </div>
-                </div><!-- /.container-fluid -->
+                </div>
             </section>
-
-
-
         </div>
     </div>
 </body>

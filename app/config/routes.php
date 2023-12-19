@@ -57,20 +57,37 @@ $router->get('/website/blog', 'Website_controller::blog');
 $router->get('/website/team', 'Website_controller::team');
 $router->get('/website/testimonial', 'Website_controller::testimonial');
 
+
 $router->get('/register', 'Register_controller::index');
 $router->post('/register', 'Register_controller::register');
+
 
 $router->get('/login', 'Login_controller::index');
 $router->post('/login', 'Login_controller::login');
 $router->post('/logout', 'Login_controller::logout');
 
+
 $router->get('/admin', 'Admin_controller::dashboard');
 $router->get('/admin/dashboard', 'Admin_controller::dashboard');
 $router->get('/admin/menu', 'Admin_controller::menu');
+$router->get('/admin/pos/session', 'Admin_controller::session');
+$router->get('/admin/pos/payment', 'Admin_controller::payment');
+
+
+$router->get('/admin/inventory/food-stocks', 'Admin_controller::food_stocks');
 
 
 $router->post('/admin/menu/edit/(:num)', 'Menu_controller::edit');
+$router->post('/admin/menu/delete/(:num)', 'Menu_controller::delete');
 $router->post('/admin/menu/add', 'Menu_controller::add');
+$router->post('/admin/menu/filter', 'Menu_controller::filterMenu');
+
+
+
+$router->post('/admin/inventory/food-stocks/edit/(:num)', 'FoodStock_controller::edit');
+$router->post('/admin/inventory/food-stocks/delete/(:num)', 'FoodStock_controller::delete');
+$router->post('/admin/inventory/food-stocks/add', 'FoodStock_controller::add');
+
 
 $router->get('/chats/(:num)', 'Chat_controller::chats');
 $router->post('/sendmessage', 'Chat_controller::sendmessage');  

@@ -40,6 +40,7 @@
             </p>
           </a>
         </li>
+        <li class="nav-header">Restaurant</li>
         <li class="nav-item">
           <a href="<?= base_url() ?>/admin/menu" class="nav-link">
             <i class="nav-icon fas fa-clipboard-list"></i>
@@ -48,14 +49,33 @@
             </p>
           </a>
         </li>
+        <li class="nav-header">Inventory</li>
         <li class="nav-item">
+          <a href="<?= base_url() ?>/admin/inventory/food-stocks" class="nav-link">
+            <i class="nav-icon fas fa-boxes-stacked"></i>
+            <p>
+              Stocks
+            </p>
+          </a>
+        </li>
+
+        <li class="nav-header">Point of Sale</li>
+        <li class="nav-item">
+          <a href="<?= base_url() ?>/admin/pos/session" class="nav-link">
+            <i class="nav-icon fas fa-bell-concierge"></i>
+            <p>
+              Counter
+            </p>
+          </a>
+        </li>
+        <!-- <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-users"></i>
             <p>
               Users
             </p>
           </a>
-        </li>
+        </li> -->
         <li class="nav-header">Activity</li>
         <li class="nav-item">
           <a href="<?= base_url() ?>/email-sender" class="nav-link">
