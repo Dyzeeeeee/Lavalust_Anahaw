@@ -68,7 +68,10 @@
                     </div>
                     <!--add a validate button at the bottom part of this div-->
                     <div class="col-12 justify-content-end text-end row">
-                        <button class="btn btn-success mt-3 sticky-bottom w-100">Validate</button>
+                        <form id="paymentForm" action="<?= site_url('/admin/pos/payment/validate') ?>" method="post">
+                            <input type="hidden" name="totalPrice" id="hiddenTotalPrice" value="0.00">
+                            <button type="submit" class="btn btn-success mt-3 sticky-bottom w-100">Validate</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -148,6 +151,23 @@
             paymentElement.textContent = 'Payment: Php' + addedAmount.toFixed(2);
             changeElement.textContent = 'Change: Php' + changeAmount.toFixed(2);
         }
+    }
+
+    function updateHiddenTotalPrice() {
+        var hiddenTotalPriceElement = document.getElementById('hiddenTotalPrice');
+        hiddenTotalPriceElement.value = storedTotalPrice.toFixed(2);
+    }
+
+    // Event listener to update hiddenTotalPrice before form submission
+    document.getElementById('paymentForm').addEventListener('submit', function() {
+        updateHiddenTotalPrice();
+        clearLocalStorage(); // Clear local storage upon form submission
+
+    });
+
+    function clearLocalStorage() {
+        localStorage.removeItem('totalPrice');
+        localStorage.removeItem('payment');
     }
 </script>
 

@@ -9,6 +9,7 @@ class Admin_controller extends Controller
     {
         parent::__construct();
         $this->call->model('Menu_model');
+        $this->call->model('Order_model');
         $this->call->model('FoodStock_model');
     }
 
@@ -78,5 +79,22 @@ class Admin_controller extends Controller
         ];
 
         $this->call->view('admin/POS/payment', $data);
+    }
+
+
+
+    public function validated($currentRouteId)
+    {
+        // Get all menu items with category names using a SQL join
+        $userData = $this->session->userdata();
+
+        $data = [
+            'user' => $userData,
+            'menu' => $this->Menu_model->getMenu(),
+            'orders' => $this->Order_model->getOrders(),
+            'currentRouteId' => $currentRouteId
+        ];
+
+        $this->call->view('admin/POS/validated', $data);
     }
 }

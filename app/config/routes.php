@@ -72,6 +72,7 @@ $router->get('/admin/dashboard', 'Admin_controller::dashboard');
 $router->get('/admin/menu', 'Admin_controller::menu');
 $router->get('/admin/pos/session', 'Admin_controller::session');
 $router->get('/admin/pos/payment', 'Admin_controller::payment');
+$router->get('/admin/pos/validated/(:num)', 'Admin_controller::validated');
 
 
 $router->get('/admin/inventory/food-stocks', 'Admin_controller::food_stocks');
@@ -87,6 +88,9 @@ $router->post('/admin/menu/filter', 'Menu_controller::filterMenu');
 $router->post('/admin/inventory/food-stocks/edit/(:num)', 'FoodStock_controller::edit');
 $router->post('/admin/inventory/food-stocks/delete/(:num)', 'FoodStock_controller::delete');
 $router->post('/admin/inventory/food-stocks/add', 'FoodStock_controller::add');
+
+
+$router->post('/admin/pos/payment/validate', 'Order_controller::validateOrder');
 
 
 $router->get('/chats/(:num)', 'Chat_controller::chats');

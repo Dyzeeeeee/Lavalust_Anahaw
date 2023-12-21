@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="<?= base_url() ?>/public/admin/index3.html" class="brand-link">
+  <a href="<?= base_url() ?>/website" class="brand-link">
     <img src="<?= base_url() ?>/public/admin/images/anahaw_logo.png" alt="AdminLTE Logo" class="brand-image img-circle " style="opacity: 2">
     <span class="brand-text font-weight-light">Anahaw Logo</span>
   </a>
