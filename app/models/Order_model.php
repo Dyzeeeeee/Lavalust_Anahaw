@@ -22,4 +22,9 @@ class Order_model extends Model
         $this->db->table('orders')->select_max('id')->get();
 
     }
+
+    public function getOrder()
+    {
+        return $this->db->table('orders')->get_all();
+    }
 }

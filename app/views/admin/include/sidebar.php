@@ -58,6 +58,14 @@
             </p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="<?= base_url() ?>/admin/inventory/suppliers" class="nav-link">
+            <i class="nav-icon fas fa-store"></i>
+            <p>
+              Suppliers
+            </p>
+          </a>
+        </li>
 
         <li class="nav-header">Point of Sale</li>
         <li class="nav-item">
@@ -65,6 +73,24 @@
             <i class="nav-icon fas fa-bell-concierge"></i>
             <p>
               Counter
+            </p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="<?= base_url() ?>/admin/pos/orders" class="nav-link">
+            <i class="nav-icon fas fa-file-invoice"></i>
+            <p>
+              Orders
+            </p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="<?= base_url() ?>/admin/pos/customers" class="nav-link">
+            <i class="nav-icon fas fa-people-group"></i>
+            <p>
+              Customers
             </p>
           </a>
         </li>
@@ -82,6 +108,14 @@
             <i class="nav-icon fa fa-paper-plane"></i>
             <p>
               Email Sender
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="<?= base_url() ?>/chats/3" class="nav-link">
+            <i class="nav-icon fa fa-comments "></i>
+            <p>
+              Chats
             </p>
           </a>
         </li>

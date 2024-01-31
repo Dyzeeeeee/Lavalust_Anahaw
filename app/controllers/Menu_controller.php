@@ -66,7 +66,6 @@ class Menu_controller extends Controller
             $name = $_POST['addName'];
             $description = $_POST['addDescription'];
             $price = $_POST['addPrice'];
-            $quantity = $_POST['addQuantity'];
             $category = $_POST['addCategory'];
 
             // Insert the new menu item into the database
@@ -74,7 +73,6 @@ class Menu_controller extends Controller
                 'name' => $name,
                 'description' => $description,
                 'price' => $price,
-                'quantity' => $quantity,
                 'category' => $category,
             ];
 

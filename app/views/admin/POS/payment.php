@@ -62,11 +62,15 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-3">
                     <div class="col-12" style="height: 450px;">
-                        customer saka invoice dito
+                        <ul class="list-group" id="selectedItemsList">
+                            <!-- list here -->
+                        </ul>
                     </div>
-                    <!--add a validate button at the bottom part of this div-->
+
+                    <!-- Add a validate button at the bottom part of this div -->
                     <div class="col-12 justify-content-end text-end row">
                         <form id="paymentForm" action="<?= site_url('/admin/pos/payment/validate') ?>" method="post">
                             <input type="hidden" name="totalPrice" id="hiddenTotalPrice" value="0.00">
@@ -81,6 +85,61 @@
 <!-- ... (your existing HTML) ... -->
 
 <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Call the function to populate the payment list
+        populateListForPayment();
+
+        // Retrieve the total price, payment, and change from local storage
+        var storedTotalPrice = parseFloat(localStorage.getItem('totalPrice')) || 0.00;
+        var storedPayment = parseFloat(localStorage.getItem('payment')) || 0.00;
+
+        // Display the total price, payment, and change
+        var displayChangeElement = document.getElementById('displayChange');
+        var displayTotalPriceElement = document.getElementById('displayTotalPrice');
+        var displayPaymentElement = document.getElementById('displayPayment');
+
+        if (!isNaN(storedTotalPrice)) {
+            displayTotalPriceElement.textContent = 'Php' + storedTotalPrice.toFixed(2);
+        } else {
+            displayTotalPriceElement.textContent = 'Php0.00';
+        }
+
+        if (!isNaN(storedPayment)) {
+            displayPaymentElement.textContent = 'Payment: Php' + storedPayment.toFixed(2);
+        } else {
+            displayPaymentElement.textContent = 'Payment: Php0.00';
+        }
+
+        // Initialize change based on the relationship between payment and total price
+        var changeAmount = storedPayment - storedTotalPrice;
+
+        if (isNaN(changeAmount) || changeAmount < 0) {
+            displayChangeElement.textContent = 'Total Due: Php' + Math.abs(changeAmount).toFixed(2);
+        } else {
+            displayChangeElement.textContent = 'Change: Php' + changeAmount.toFixed(2);
+        }
+    });
+
+    function populateListForPayment() {
+        var selectedItemsList = document.getElementById('selectedItemsList');
+        selectedItemsList.innerHTML = ''; // Clear the list before populating
+
+        // Retrieve the list of selected items from local storage
+        var selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+
+        // Iterate through the selected items and display them in the list
+        selectedItems.forEach(function(item) {
+            var listItem = document.createElement('li');
+            listItem.className = 'list-group-item';
+            listItem.innerHTML = `<strong>${item.name}</strong> | Quantity: ${item.quantity} | Total Price: Php ${item.totalPrice.toFixed(2)}`;
+            selectedItemsList.appendChild(listItem);
+        });
+    }
+
+
+    // ... (rest of your existing script) ...
+
+
     // Retrieve the total price, payment, and change from local storage
     var storedTotalPrice = parseFloat(localStorage.getItem('totalPrice')) || 0.00;
     var storedPayment = parseFloat(localStorage.getItem('payment')) || 0.00;
@@ -161,8 +220,32 @@
     // Event listener to update hiddenTotalPrice before form submission
     document.getElementById('paymentForm').addEventListener('submit', function() {
         updateHiddenTotalPrice();
-        clearLocalStorage(); // Clear local storage upon form submission
 
+        // Retrieve the list of selected items from local storage
+        var selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+
+        // Add item details to the form data
+        selectedItems.forEach(function(item) {
+            var itemNameInput = document.createElement('input');
+            itemNameInput.type = 'hidden';
+            itemNameInput.name = 'itemNames[]';
+            itemNameInput.value = item.name;
+            this.appendChild(itemNameInput);
+
+            var itemQuantityInput = document.createElement('input');
+            itemQuantityInput.type = 'hidden';
+            itemQuantityInput.name = 'itemQuantities[]';
+            itemQuantityInput.value = item.quantity;
+            this.appendChild(itemQuantityInput);
+
+            var itemTotalPriceInput = document.createElement('input');
+            itemTotalPriceInput.type = 'hidden';
+            itemTotalPriceInput.name = 'itemTotalPrices[]';
+            itemTotalPriceInput.value = item.totalPrice.toFixed(2);
+            this.appendChild(itemTotalPriceInput);
+        }, this);
+
+        clearLocalStorage(); // Clear local storage upon form submission
     });
 
     function clearLocalStorage() {

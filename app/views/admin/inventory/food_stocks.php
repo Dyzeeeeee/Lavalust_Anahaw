@@ -20,7 +20,6 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Responsive Hover Table</h3>
 
                             <div class="card-tools">
                                 <div class="input-group input-group-sm" style="width: 250px;">
@@ -57,6 +56,10 @@
                                                                 <input type="text" class="form-control" id="quantity" name="quantity" required>
                                                             </div>
                                                             <div class="mb-3">
+                                                                <label for="ideal" class="form-label">Ideal</label>
+                                                                <input type="text" class="form-control" id="ideal" name="ideal" required>
+                                                            </div>
+                                                            <div class="mb-3">
                                                                 <label for="unitOfMeasurement" class="form-label">Unit of Measurement</label>
                                                                 <input type="text" class="form-control" id="unitOfMeasurement" name="unitOfMeasurement" required>
                                                             </div>
@@ -90,8 +93,10 @@
                             <table class="table table-hover text-nowrap">
                                 <thead>
                                     <tr>
+                                        <th>Percentage</th>
                                         <th>Ingredient Name</th>
                                         <th>Quantity</th>
+                                        <th>Ideal</th>
                                         <th>Unit of Measurement</th>
                                         <th>Purchase Date</th>
                                         <th>Expiration Date</th>
@@ -102,8 +107,26 @@
                                 <tbody>
                                     <?php foreach ($foodStocks as $foodStock) : ?>
                                         <tr>
-                                            <td><?= $foodStock['ingredient_name'] ?></td>
+                                            <td>
+                                                <?php
+                                                $percentage = ($foodStock['quantity'] / $foodStock['ideal']) * 100;
+                                                $colorClass = '';
+
+                                                if ($percentage >= 70) {
+                                                    $colorClass = 'bg-success'; // Green
+                                                } elseif ($percentage >= 30) {
+                                                    $colorClass = 'bg-warning'; // Yellow
+                                                } else {
+                                                    $colorClass = 'bg-danger'; // Red
+                                                }
+                                                ?>
+                                                <div class="progress" style="height: 20px;">
+                                                    <div class="progress-bar <?= $colorClass ?>" role="progressbar" style="width: <?= $percentage ?>%;" aria-valuenow="<?= $percentage ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td><b><em><?= $foodStock['ingredient_name'] ?></em></b></td>
                                             <td><?= $foodStock['quantity'] ?></td>
+                                            <td><?= $foodStock['ideal'] ?></td>
                                             <td><?= $foodStock['unit_of_measurement'] ?></td>
                                             <td><?= $foodStock['purchase_date'] ?></td>
                                             <td><?= $foodStock['expiration_date'] ?></td>
@@ -130,11 +153,15 @@
                                                         <form action="<?= site_url('/admin/inventory/food-stocks/edit/' . $foodStock['id']) ?>" method="post">
                                                             <div class="mb-3">
                                                                 <label for="ingredientName" class="form-label">Ingredient Name</label>
-                                                                <input type="text" class="form-control" id="ingredientName" name="ingredientName" value="<?= $foodStock['ingredient_name'] ?>" required>
+                                                            <input type="text" class="form-control" id="ingredientName" name="ingredientName" value="<?= $foodStock['ingredient_name'] ?>" required>
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label for="quantity" class="form-label">Quantity</label>
                                                                 <input type="text" class="form-control" id="quantity" name="quantity" value="<?= $foodStock['quantity'] ?>" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="quantity" class="form-label">Ideal</label>
+                                                                <input type="text" class="form-control" id="ideal" name="ideal" value="<?= $foodStock['ideal'] ?>" required>
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label for="unitOfMeasurement" class="form-label">Unit of Measurement</label>

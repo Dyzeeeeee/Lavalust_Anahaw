@@ -73,6 +73,7 @@ $router->get('/admin/menu', 'Admin_controller::menu');
 $router->get('/admin/pos/session', 'Admin_controller::session');
 $router->get('/admin/pos/payment', 'Admin_controller::payment');
 $router->get('/admin/pos/validated/(:num)', 'Admin_controller::validated');
+$router->get('/admin/pos/orders', 'Admin_controller::orders');
 
 
 $router->get('/admin/inventory/food-stocks', 'Admin_controller::food_stocks');
@@ -91,6 +92,9 @@ $router->post('/admin/inventory/food-stocks/add', 'FoodStock_controller::add');
 
 
 $router->post('/admin/pos/payment/validate', 'Order_controller::validateOrder');
+$router->get('/admin/pos/print', 'Order_controller::print');
+$router->get('admin/pos/download/(:num)', 'Order_controller::download');
+
 
 
 $router->get('/chats/(:num)', 'Chat_controller::chats');
@@ -99,3 +103,4 @@ $router->post('/sendmessage', 'Chat_controller::sendmessage');
 
 $router->get('/email-sender', 'Welcome::email');
 $router->post('/send_mail', 'Welcome::send_mail');
+

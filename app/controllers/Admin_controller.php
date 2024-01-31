@@ -10,6 +10,7 @@ class Admin_controller extends Controller
         parent::__construct();
         $this->call->model('Menu_model');
         $this->call->model('Order_model');
+        $this->call->model('OrderItem_model');
         $this->call->model('FoodStock_model');
     }
 
@@ -19,6 +20,7 @@ class Admin_controller extends Controller
 
         $data = [
             'menu' => $this->Menu_model->getMenu(),
+            'foodStocks' => $this->FoodStock_model->getFoodStocks(),
             'user' => $userData
         ];
         $this->call->view('admin/dashboard', $data);
@@ -92,9 +94,27 @@ class Admin_controller extends Controller
             'user' => $userData,
             'menu' => $this->Menu_model->getMenu(),
             'orders' => $this->Order_model->getOrders(),
+            'orderItems' => $this->OrderItem_model->getOrderItems(),
             'currentRouteId' => $currentRouteId
         ];
 
         $this->call->view('admin/POS/validated', $data);
+    }
+
+
+    public function orders()
+    {
+        // Get all menu items with category names using a SQL join
+        $userData = $this->session->userdata();
+
+        $data = [
+            'user' => $userData,
+            'menu' => $this->Menu_model->getMenu(),
+            'foodStocks' => $this->FoodStock_model->getFoodStocks(),
+            'orders' => $this->Order_model->getOrders(),
+            'order_items' => $this->OrderItem_model->getOrderItems(),
+        ];
+
+        $this->call->view('admin/POS/orders', $data);
     }
 }

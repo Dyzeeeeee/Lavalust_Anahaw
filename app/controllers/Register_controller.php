@@ -32,6 +32,6 @@ class Register_controller extends Controller
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
         $this->Accounts_model->register($firstname, $lastname, $email, $hashedPassword);
-        redirect('/');
+        redirect('/login');
     }
 }

@@ -25,6 +25,7 @@ class FoodStock_controller extends Controller
             // Example: Assume you have input fields 'ingredient_name', 'quantity', 'unit_of_measurement', 'purchase_date', 'expiration_date', 'supplier_name'
             $ingredientName = $_POST['ingredientName'];
             $quantity = $_POST['quantity'];
+            $ideal = $_POST['ideal'];
             $unitOfMeasurement = $_POST['unitOfMeasurement'];
             $purchaseDate = $_POST['purchaseDate'];
             $expirationDate = $_POST['expirationDate'];
@@ -34,6 +35,7 @@ class FoodStock_controller extends Controller
             $updateData = [
                 'ingredient_name' => $ingredientName,
                 'quantity' => $quantity,
+                'ideal' => $ideal,
                 'unit_of_measurement' => $unitOfMeasurement,
                 'purchase_date' => $purchaseDate,
                 'expiration_date' => $expirationDate,
@@ -66,6 +68,7 @@ class FoodStock_controller extends Controller
             // Example: Assume you have input fields 'ingredient_name', 'quantity', 'unit_of_measurement', 'purchase_date', 'expiration_date', 'supplier_name'
             $ingredientName = $_POST['ingredientName'];
             $quantity = $_POST['quantity'];
+            $ideal = $_POST['ideal'];
             $unitOfMeasurement = $_POST['unitOfMeasurement'];
             $purchaseDate = $_POST['purchaseDate'];
             $expirationDate = $_POST['expirationDate'];
@@ -75,6 +78,7 @@ class FoodStock_controller extends Controller
             $addData = [
                 'ingredient_name' => $ingredientName,
                 'quantity' => $quantity,
+                'ideal' => $ideal,
                 'unit_of_measurement' => $unitOfMeasurement,
                 'purchase_date' => $purchaseDate,
                 'expiration_date' => $expirationDate,

@@ -32,7 +32,12 @@
                 <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
                 <?php if (isset($_SESSION['logged_in'])) {
                 ?>
-                    <a href="<?= base_url() ?>/logout" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Logout</a>
+                    <!-- Use a form for the logout action -->
+                    <form action="<?= base_url() ?>/logout" method="post">
+                        <!-- Add any additional hidden inputs if needed -->
+                        <button type="submit" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Logout</button>
+                    </form>
+
                 <?php } else { ?>
                     <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
                     <a href="<?= base_url() ?>/login" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Login</a>

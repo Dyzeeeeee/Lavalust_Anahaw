@@ -89,10 +89,6 @@
                                                         <input type="text" class="form-control" id="addPrice" name="addPrice" required>
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="addQuantity" class="form-label">Quantity</label>
-                                                        <input type="text" class="form-control" id="addQuantity" name="addQuantity" required>
-                                                    </div>
-                                                    <div class="mb-3">
                                                         <label for="addCategory" class="form-label">Category</label>
                                                         <br>
                                                         <select class="form-select  form-select-sm" id="addCategory" name="addCategory" required>
@@ -139,7 +135,6 @@
                                             <th>Description</th>
                                             <th>Image</th>
                                             <th>Price</th>
-                                            <th>Quantity</th>
                                             <th>Category</th>
                                             <th>Action</th>
                                         </tr>
@@ -151,7 +146,6 @@
                                                 <td><?= $mi['description'] ?></td>
                                                 <td><?= $mi['image'] ?></td>
                                                 <td><?= $mi['price'] ?></td>
-                                                <td><?= $mi['quantity'] ?></td>
                                                 <td><?= $mi['category'] ?></td>
                                                 <td>
                                                     <a href="#" class="text-primary" title="Edit" data-toggle="modal" data-target="#editModal<?= $mi['id'] ?>"><i class="fas fa-edit"></i></a>
@@ -193,11 +187,12 @@
                                                                 <div class="mb-3">
                                                                     <label for="category" class="form-label">Category</label>
                                                                     <br>
-                                                                    <select class="form-select" id="category" name="category" required>
+                                                                    <select class="form-select  form-select-sm" id="addCategory" name="addCategory" required>
                                                                         <!-- Mock options, replace with actual category options -->
-                                                                        <option value="1">Category 1</option>
-                                                                        <option value="2">Category 2</option>
-                                                                        <option value="3">Category 3</option>
+                                                                        <option value="Drinks">Drinks</option>
+                                                                        <option value="Ulam">Ulam</option>
+                                                                        <option value="Desserts">Dessert</option>
+                                                                        <option value="Meals">Meals</option>
                                                                     </select>
                                                                 </div>
                                                                 <!-- Add more form fields as needed -->
@@ -269,17 +264,14 @@
                                                             <input type="text" class="form-control" id="price" name="price" value="<?= $mi['price'] ?>" required>
                                                         </div>
                                                         <div class="mb-3">
-                                                            <label for="quantity" class="form-label">Quantity</label>
-                                                            <input type="text" class="form-control" id="quantity" name="quantity" value="<?= $mi['quantity'] ?>" required>
-                                                        </div>
-                                                        <div class="mb-3">
                                                             <label for="category" class="form-label">Category</label>
                                                             <br>
-                                                            <select class="form-select" id="category" name="category" required>
+                                                            <select class="form-select  form-select-sm" id="addCategory" name="addCategory" required>
                                                                 <!-- Mock options, replace with actual category options -->
-                                                                <option value="1">Category 1</option>
-                                                                <option value="2">Category 2</option>
-                                                                <option value="3">Category 3</option>
+                                                                <option value="Drinks">Drinks</option>
+                                                                <option value="Ulam">Ulam</option>
+                                                                <option value="Desserts">Dessert</option>
+                                                                <option value="Meals">Meals</option>
                                                             </select>
                                                         </div>
                                                         <!-- Add more form fields as needed -->
